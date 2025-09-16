@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Duratech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="header-container">
+    
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="facility.html">Facility</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1 class="page-title">Our Products</h1>
+
+  <section class="row-grid">
+    <div class="row-card">
+      ⚙️ <h3>CNC Turned Components</h3>
+      <p>Bushes, Bearing Covers, Rings, Shafts, and Custom CNC Parts. Material: Mild Steel, Stainless Steel, Aluminum. Application: Automotive, Industrial Machinery, Textile Equipment.</p>
+    </div>
+    <div class="row-card">
+      🏎️ <h3>Automobile Components</h3>
+      <p>Engine Flywheels, Thrust Collars, Gears, Clutch Parts. Bulk manufacturing capability with precision tolerance. Reliable performance for various automobile models.</p>
+    </div>
+    <div class="row-card">
+      🪵 <h3>Patterns</h3>
+      <p>Wooden and Aluminum Patterns for Casting. Accurate dimensions for high-quality castings. Used in automotive and industrial casting processes.</p>
+    </div>
+    <div class="row-card">
+      💧 <h3>Pumps & Spares</h3>
+      <p>Submersible Pumps, Peristaltic Pumps, Pump Spares. Designed for industrial, chemical, and water applications.</p>
+    </div>
+    <div class="row-card">
+      🧵 <h3>Textile Components</h3>
+      <p>Custom manufactured components for textile machinery. High precision and durability.</p>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Duratech Engineering Solution | All Rights Reserved</p>
+</footer>
+
+<!-- Glowing Cursor -->
+<div class="cursor"></div>
+<script>
+  const cursor = document.querySelector(".cursor");
+  document.addEventListener("mousemove", e => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+  });
+</script>
+<!-- Particle Canvas -->
+<canvas id="bgCanvas"></canvas>
+
+
+</body>
+</html>

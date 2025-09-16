@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facility - Duratech Engineering Solution</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Glowing Cursor -->
+  <div class="cursor"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+     
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="facility.html" class="active">Facility</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Facility Section -->
+  <section class="facility-section">
+    <h1 class="page-title">Our Facilities</h1>
+    
+    
+    <div class="row-grid">
+      <div class="row-card">
+        <h3>CNC Turning Centers</h3>
+        <p>High-precision CNC machines for accurate turning operations, suitable for metal and alloy components.</p>
+      </div>
+
+      <div class="row-card">
+        <h3>VMC Machines</h3>
+        <p>Vertical Machining Centers for milling, drilling, and complex 3D machining operations.</p>
+      </div>
+
+      <div class="row-card">
+        <h3>Pattern Making Section</h3>
+        <p>Dedicated area for creating wooden and aluminum patterns for casting processes.</p>
+      </div>
+
+      <div class="row-card">
+        <h3>Pumps & Spares Manufacturing</h3>
+        <p>Specialized equipment for producing submersible and peristaltic pumps, along with high-quality pump spares.</p>
+      </div>
+
+      <div class="row-card">
+        <h3>Textile Components Section</h3>
+        <p>Facility dedicated to manufacturing precision components for the textile industry with stringent quality checks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Duratech Engineering Solution. All Rights Reserved.
+  </footer>
+
+  <!-- Glowing Cursor Script -->
+  <script>
+    const cursor = document.querySelector(".cursor");
+    document.addEventListener("mousemove", e => {
+      cursor.style.left = e.clientX + "px";
+      cursor.style.top = e.clientY + "px";
+    });
+  </script>
+
+</body>
+</html>

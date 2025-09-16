@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Duratech Engineering Solution</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Glowing Cursor -->
+  <div class="cursor"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+     
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="facility.html">Facility</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Send us a message or request a quote. We are here to help!</p>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Message Me</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Duratech Engineering Solution. All Rights Reserved.
+  </footer>
+
+  <!-- Glowing Cursor Script -->
+  <script>
+    const cursor = document.querySelector(".cursor");
+    document.addEventListener("mousemove", e => {
+      cursor.style.left = e.clientX + "px";
+      cursor.style.top = e.clientY + "px";
+    });
+  </script>
+
+</body>
+</html>
