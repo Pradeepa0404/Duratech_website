@@ -1,78 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Facility - Duratech Engineering Systems</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Duratech Engineering Systems - Facilities</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
 
-  <!-- Glowing Cursor -->
-  <div class="cursor"></div>
+<!-- Header -->
+<header>
+  <div class="container">
+   
+    <h1>
+      <span class="blue">Dura</span><span class="red">Tech</span>
+      <span class="blue">Engineering</span> <span class="red">Systems</span>
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="facility.html">Facilities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <!-- Header -->
-  <header>
-    <div class="header-container">
-     
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="facility.html" class="active">Facility</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h2>Our Facilities</h2>
+    <p>State-of-the-art machinery and advanced production capabilities for high-quality engineering solutions.</p>
+  </div>
+</section>
+
+<!-- Facilities Section -->
+<section class="facilities">
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <h3>CNC Machines</h3>
+        <p>High-precision CNC turning and milling machines for industrial components.</p>
+      </div>
+      <div class="card">
+        <h3>Pattern Shop</h3>
+        <p>Durable pattern making facility for casting and manufacturing processes.</p>
+      </div>
+      <div class="card">
+       <h3>Quality Lab</h3>
+        <p>Dedicated lab for testing and inspecting components to ensure top quality.</p>
+      </div>
+      <div class="card">
+        <h3>R&D Center</h3>
+        <p>Advanced research and development facility for innovative solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Material Storage</h3>
+        <p>Organized storage for raw materials ensuring smooth production flow.</p>
+      </div>
+      <div class="card">
+        <h3>Assembly Area</h3>
+        <p>Clean and efficient assembly area for final product testing and packaging.</p>
+      </div>
+      <!-- Add more facilities here if needed -->
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- Facility Section -->
-  <section class="facility-section">
-    <h1 class="page-title">Our Facilities</h1>
-    
-    
-    <div class="row-grid">
-      <div class="row-card">
-        <h3>CNC Turning Centers</h3>
-        <p>High-precision CNC machines for accurate turning operations, suitable for metal and alloy components.</p>
-      </div>
-
-      <div class="row-card">
-        <h3>VMC Machines</h3>
-        <p>Vertical Machining Centers for milling, drilling, and complex 3D machining operations.</p>
-      </div>
-
-      <div class="row-card">
-        <h3>Pattern Making Section</h3>
-        <p>Dedicated area for creating wooden and aluminum patterns for casting processes.</p>
-      </div>
-
-      <div class="row-card">
-        <h3>Pumps & Spares Manufacturing</h3>
-        <p>Specialized equipment for producing submersible and peristaltic pumps, along with high-quality pump spares.</p>
-      </div>
-
-      <div class="row-card">
-        <h3>Textile Components Section</h3>
-        <p>Facility dedicated to manufacturing precision components for the textile industry with stringent quality checks.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Duratech Engineering Systems. All Rights Reserved.
-  </footer>
-
-  <!-- Glowing Cursor Script -->
-  <script>
-    const cursor = document.querySelector(".cursor");
-    document.addEventListener("mousemove", e => {
-      cursor.style.left = e.clientX + "px";
-      cursor.style.top = e.clientY + "px";
-    });
-  </script>
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Duratech Engineering Systems. All Rights Reserved.</p>
+  </div>
+</footer>
 
 </body>
 </html>
-
-
-
