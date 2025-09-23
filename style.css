@@ -1,220 +1,274 @@
-/* ------------------ Reset ------------------ */
+/* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html, body {
-  min-height: 100%;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #000814, #001d3d);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  cursor: none; /* hide default cursor */
-  scroll-behavior: smooth;
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ecf0f1;
+    color: #2c3e50;
 }
 
-/* ------------------ Background Canvas ------------------ */
-#bgCanvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-/* ------------------ Glowing Cursor ------------------ */
-.cursor {
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #00b4d8;
-  box-shadow: 0 0 15px #00b4d8, 0 0 30px #0077b6;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-}
-
-/* ------------------ Header ------------------ */
+/* Header */
 header {
-  background: rgba(0,0,0,0.7);
-  padding: 15px 40px;
-}
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  font-size: 40px;
-  font-weight: bold;
-  text-shadow: 0 0 15px #00b4d8, 0 0 30px #0077b6;
-}
-nav a {
-  color: #fff;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-nav a:hover, nav a.active {
-  color: #00b4d8;
-  text-shadow: 0 0 10px #00b4d8;
+    background-color: #2f4f4f; /* dark slate gray */
+    color: white;
+    padding: 10px 0; /* thinner header */
+    height: 60px; /* light height */
+    display: flex;
+    align-items: center;
 }
 
-/* ------------------ Hero Section ------------------ */
+
+header h1 {
+    float: left;
+    margin-left: 20px;
+    font-size: 1.8rem; /* smaller title */
+}
+
+header nav {
+    float: right;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+header nav ul li a:hover {
+    color: #e67e22;
+}
+
+/* Hero Section */
 .hero {
-  text-align: center;
-  padding: 50px 20px 50px; /* top padding reduced to move company name up */
-}
-.company-name {
-  font-size: 60px;
-  text-align: center;
-  color: #00b4d8;
-  text-shadow: 
-    2px 2px 0 #0077b6,
-    4px 4px 0 #0077b6,
-    0 0 15px #00b4d8,
-    0 0 30px #0077b6;
-  margin-bottom: 30px; /* spacing between company name and tagline/button */
-}
-.hero p { 
-  margin: 15px 0; 
-  font-size: 1.2rem; 
-}
-.cta-btn {
-  background: #00b4d8;
-  color: #000;
-  padding: 12px 25px;
-  border-radius: 30px;
-  font-weight: bold;
-  box-shadow: 0 4px 15px rgba(0,180,216,0.5);
-  transition: transform 0.3s, box-shadow 0.3s;
-  margin-top: 20px;
-}
-.cta-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 25px #00b4d8, 0 0 50px #0077b6;
+    background-color: #29adb9;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
 }
 
-/* ------------------ Sections ------------------ */
-.page-title, .about h2, .why-choose h2 {
-  text-align: center;
-  color: #00b4d8;
-  text-shadow: 0 0 10px #00b4d8;
-  margin: 30px 0;
-}
-.about, .why-choose {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 30px;
-  text-align: center;
-  background: rgba(0,0,0,0.5);
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,180,216,0.4);
-}
-.about p { font-size: 17px; line-height: 1.6; }
-
-/* ------------------ Row Grid Cards ------------------ */
-.row-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  max-width: 900px;
-  margin: 30px auto;
-}
-.row-card, .why-item {
-  background: rgba(0,0,0,0.6);
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,180,216,0.5);
-  font-size: 18px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.row-card:hover, .why-item:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 12px 30px rgba(0,180,216,0.7);
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-/* ------------------ Subheading H3 in Products & Facility ------------------ */
-.row-card h3 {
-  color: #00b4d8;
-  text-shadow: 0 0 8px #00b4d8;
-  margin-bottom: 10px;
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+/* About Us Points */
+.about-points {
+    list-style-type: disc;       /* standard bullets */
+    padding-left: 40px;          /* space from left */
+    max-width: 800px;            /* width control */
+    margin: 0 auto;              /* center block */
+    color: #555;
+    font-size: 1.1rem;
 }
 
-/* ------------------ Why Choose Grid ------------------ */
-.why-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+.about-points li {
+    margin-bottom: 10px;         /* spacing between points */
 }
 
-/* ------------------ Contact Page ------------------ */
-.contact-section {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 30px;
-  background: rgba(0,0,0,0.6);
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0,180,216,0.5);
-  text-align: center;
-}
-.contact-section h2 {
-  color: #00b4d8;
-  text-shadow: 0 0 12px #00b4d8;
-  margin-bottom: 20px;
-}
-.contact-section p {
-  font-size: 17px;
-  margin-bottom: 25px;
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border-radius: 8px;
-  border: none;
-  font-size: 16px;
-  outline: none;
-  background: #001d3d;
-  color: #fff;
-  box-shadow: inset 0 0 8px rgba(0,180,216,0.4);
-  transition: 0.3s;
-}
-.contact-form input:focus,
-.contact-form textarea:focus {
-  box-shadow: 0 0 15px #00b4d8, 0 0 30px #0077b6;
-}
-.contact-form button {
-  background: #00b4d8;
-  padding: 12px;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s, box-shadow 0.3s;
-}
-.contact-form button:hover {
-  background: #0077b6;
-  color: #fff;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #00b4d8, 0 0 40px #0077b6;
+
+
+
+/* Buttons */
+.btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-/* ------------------ Footer ------------------ */
+.btn:hover {
+    background-color: #d35400;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+/* Grid Layout */
+.grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+/* Contact Form */
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact button {
+    width: 200px;
+    align-self: center;
+    padding: 10px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #d35400;
+}
+/* Center the "Get in Touch" heading */
+.contact-title {
+    text-align: center;
+    margin-bottom: 30px; /* spacing below heading */
+    font-size: 2rem;
+    color: #2c3e50; /* matches theme */
+}
+/* Contact Info Box */
+.contact-box {
+    max-width: 500px;        /* controls box width */
+    margin: 40px auto;       /* centers horizontally */
+    padding: 30px;
+    background-color: #ffffff; /* white background */
+    border-radius: 10px;       /* rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    text-align: center;        /* center the text */
+    color: #2c3e50;           /* text color */
+}
+
+.contact-box h3 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.contact-box p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+
+
+/* Footer */
 footer {
-  margin-top: auto;
-  padding: 15px;
-  text-align: center;
-  background: #000814;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1, header nav {
+        float: none;
+        text-align: center;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Company Name Colors */
+.blue {
+    color: #026db4; /* blue */
+}
+
+.red {
+    color: #e74c3c; /* red */
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #1a1a1a; /* keep or change color */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  height: 60px;   /* change size as you like */
+  width: auto;
+}
+
+.company-name {
+  position: absolute;   /* place at top-right */
+  top: 20px;
+  right: 20px;
+  font-size: 36px;      /* large text */
+  font-weight: bold;    /* bold */
+  color: #f0f0f0;       /* light color (off-white) */
+  font-family: Arial, sans-serif;
+}
+
+.blue { color: #007BFF; } /* Blue */
+.red { color: #FF3B30; }  /* Red */
+.logo {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  width: 120px;  /* adjust size */
+  height: auto;
 }
