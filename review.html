@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews - DuraTech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <nav class="header-nav">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="facility.html">Facilities</a></li>
+        <li><a href="reviews.html" >Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <img src="logo.png" alt="Company Logo" class="logo">
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero-section">
+    <h1>Customer Reviews</h1>
+    <p>Share your experience with us. Your feedback helps us grow.</p>
+  </section>
+
+  <!-- ===== Review Form ===== -->
+  <section class="review-form">
+    <h2>Give Your Review</h2>
+    <form id="reviewForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" required>
+
+      <label for="review">Your Review:</label>
+      <textarea id="review" rows="4" required></textarea>
+
+      <!-- OTP Section -->
+      <div id="otpSection" style="display:none;">
+        <label for="otp">Enter OTP:</label>
+        <input type="text" id="otp" placeholder="Enter 6-digit OTP">
+      </div>
+
+      <button type="button" id="sendOtpBtn">Send OTP</button>
+      <button type="submit" id="submitBtn" style="display:none;">Submit Review</button>
+    </form>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2025 DuraTech Engineering Systems. All Rights Reserved.</p>
+  </footer>
+
+  <script src="review.js"></script>
+</body>
+</html>
